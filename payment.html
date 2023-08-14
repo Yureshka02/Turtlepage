@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paymentstyle.css">
+    <script src="payment.js" defer></script>
+    <!-- Include inputmask library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+<title>Payment Page</title>
+</head>
+<body>
+    <header>
+        <h1>BUY TICKETS !</h1>
+        
+    </header>
+    <main>
+        <section class="payment-section">
+            <h2>Payment details</h2>
+            <form id="payment-form">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required placeholder="1234-1234-134-1234">
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                <label for="cvc">CVC / CVV:</label>
+                <input type="text" id="cvc" name="cvc" required maxlength="3" placeholder="343">
+                <label for="nameOnCard">Name on Card:</label>
+                <input type="text" id="nameOnCard" name="nameOnCard" required placeholder="John Doe" maxlength="50">
+                <button type="submit" id="payButton" disabled>Pay <span id="payAmount"></span></button>
+            </form>
+        </section>
+        <section class="summary-section">
+            <!-- summary table -->
+        </section>
+    </main>
+</body>
+</html>

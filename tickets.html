@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets Page</title>
+<link rel="stylesheet" href="ticketsstyle.css">
+</head>
+<body>
+  <header>
+    <h1>BUY TICKETS !</h1>
+  </header>
+  <section id="dates">
+    <h2>Dates</h2>
+    <br>
+    <h3>Select Your Date</h3>
+    <input type="date" id="visitDate">
+  </section>
+  
+
+<section id="guests">
+  <h2>Guests</h2>
+  <br>
+  <div class="category">
+    <label for="slAdult">SL Adult:</label>
+    <div class="input-container">
+      <input type="number" id="slAdult" min="0" value="0">
+      <button class="increment">+</button>
+      <button class="decrement">-</button>
+    </div>
+  </div>
+  <div class="category">
+    <label for="slChild">SL Child:</label>
+    <div class="input-container">
+      <input type="number" id="slChild" min="0" value="0">
+      <button class="increment">+</button>
+      <button class="decrement">-</button>
+    </div>
+  </div>
+  <div class="category">
+    <label for="foreignerAdult">Foreigner Adult:</label>
+    <div class="input-container">
+      <input type="number" id="foreignerAdult" min="0" value="0">
+      <button class="increment">+</button>
+      <button class="decrement">-</button>
+    </div>
+  </div>
+  <div class="category">
+    <label for="foreignerChild">Foreigner Child:</label>
+    <div class="input-container">
+      <input type="number" id="foreignerChild" min="0" value="0">
+      <button class="increment">+</button>
+      <button class="decrement">-</button>
+    </div>
+  </div>
+  <div class="category">
+    <label for="infant">Infant:</label>
+    <div class="input-container">
+      <input type="number" id="infant" min="0" value="0">
+      <button class="increment">+</button>
+      <button class="decrement">-</button>
+    </div>
+  </div>
+</section>
+
+
+  <section id="duration">
+    <h2>Duration</h2>
+    <br>
+    <label for="timeSlot">Click and Drag to Select Time Slots:</label>
+    <br>
+    
+    <select id="timeSlot" multiple >
+      <option value="07-08">07.00 am - 08.00 am</option>
+      <option value="08-09">08.00 am - 09.00 am</option>
+      <option value="09-10">09.00 am - 10.00 am</option>
+      <option value="10-11">10.00 am - 11.00 am (Peak)</option>
+      <option value="11-12">11.00 am - 12.00 pm (Peak)</option>
+      <option value="12-01">12.00 pm - 01.00 pm (Peak)</option>
+      <option value="01-02">01.00 pm - 02.00 pm</option>
+      <option value="02-03">02.00 pm - 03.00 pm</option>
+      <option value="03-04">03.00 pm - 04.00 pm (Peak)</option>
+      <option value="04-05">04.00 pm - 05.00 pm (Peak)</option>
+      <option value="05-06">05.00 pm - 06.00 pm (Peak)</option>
+    </select>
+  </section>
+
+  <section id="prices">
+    <h2>Ticket Prices</h2>
+    <table>
+      <tr>
+        <th>Ticket Type</th>
+        <th>Normal Hour Charge</th>
+        <th>Peak Hour Charge</th>
+      </tr>
+      <tr>
+        <td>SL Adult</td>
+        <td>$4</td>
+        <td>$6</td>
+      </tr>
+      <tr>
+        <td>SL Child</td>
+        <td>$2</td>
+        <td>$3</td>
+      </tr>
+      <tr>
+        <td>Foreigner Adult</td>
+        <td>$10</td>
+        <td>$13</td>
+      </tr>
+      <tr>
+        <td>Foreigner Child</td>
+        <td>$5</td>
+        <td>$8</td>
+      </tr>
+      <tr>
+        <td>Infant</td>
+        <td>Free</td>
+        <td>Free</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="summary">
+    <h2>Summary</h2>
+    <table>
+      <tr>
+        <td>Date</td>
+        <td id="summaryDate"></td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td id="summaryTime"></td>
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td id="summaryDuration"></td>
+      </tr>
+      <tr>
+        <td>Tickets</td>
+        <td id="summaryTickets"></td>
+      </tr>
+      <tr>
+        <td>Total Price</td>
+        <td id="summaryTotal"></td>
+      </tr>
+    </table>
+
+
+    <div class="ticket-button">
+      <button id="continueButton" disabled>Continue with purchase</button>
+    </div>
+    
+  </section>
+  <footer>
+    <nav>
+        <ul>
+            <li><a href="hikkaduwa.html" class="back-to-home-button">Go Back</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <p>&copy; The Turtle Foundation. All rights reserved.</p>
+    <p>contact us :0779646765</p>
+    <p>email us :theturtlefoundation@gmail.com</p>
+  </footer>
+
+ 
+
+  
+<script>
+  // Redirect to the Details page
+  const continueButton = document.getElementById("continueButton");
+  continueButton.addEventListener("click", function () {
+    window.location.href = "details.html"; // Update the path accordingly
+  });
+</script>
+
+<script src="tickets.js"></script>
+</body>
+</html>
+
+
+

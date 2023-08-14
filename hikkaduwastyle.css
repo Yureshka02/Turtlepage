@@ -1,0 +1,626 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    filter: brightness(100%);
+}
+
+nav{
+  padding: 20px;
+  margin: 20px;
+  position: sticky;
+}
+.navlinks h1{
+  text-align: center;
+  
+  position: relative;
+  color: #f2f2f2;
+  
+  
+}
+.navlinks ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: cursive;
+  
+}
+
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px 0 60px;
+  position: relative;
+}
+
+.navlinks ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #f4f7f7;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    left: 90px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  li.current-page:hover .dropdown-list {
+    display: block;
+    opacity: 1;
+  }
+  
+  .dropdown-list li {
+    list-style: none;
+    padding: 8px 16px;
+  }
+  
+  .dropdown-list li a {
+    display: block;
+    color: #fffafa;
+    text-decoration: none;
+  }
+  
+  .dropdown-list li a:hover {
+    background-color: none;
+  }
+  
+  .logo {
+      width: 600px;
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+
+  .dropdown-list {
+      display: none;
+      position: absolute;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+
+  li.current-page:hover .dropdown-list {
+      display: block;
+      opacity: 1;
+  }
+
+  .dropdown-list li {
+      list-style: none;
+      padding: 8px 16px;
+  }
+
+  .dropdown-list li a {
+      display: block;
+      color: #fffafa;
+      text-decoration: none;
+  }
+
+  .dropdown-list li a:hover {
+      background-color: none;
+  }
+
+  .backgroundvid2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+  }
+
+
+
+@media (min-aspect-ratio: 16/9) {
+    .backgroundvid2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .backgroundvid2 {
+        width: auto;
+        height: 100%;
+    }
+}
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+  
+      #video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+  
+      #video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+  
+      #overlay1 {
+        position: absolute;
+        top: 100px;
+        left: 130px;
+        width: 80%;
+        height:80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        z-index: 1;
+        font-family:  'Pathway Extreme', sans-serif;;
+      }
+      
+  
+      #overlay1 h1  {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        left: 50%;
+        align-items: center;
+
+      }
+
+  
+      #overlay1 p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        left: 50%;
+        bottom: 10px;
+        align-items: center;
+      }
+
+      .places-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .place-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    
+    .place-name {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .place-address  {
+        font-size: 10px;
+        color: #444;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .place-image {
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    
+    .place-contact, .place-open-time {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    
+    .select-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .select-button:hover {
+        background-color: #0056b3;
+    }
+    
+
+      #service{
+    width: 100%;
+    padding: 70px 0;
+    background: #c5efff;
+}
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service{
+      flex-basis: 40%;
+      text-align: center;
+      border-radius: 7px;
+      margin-bottom: 20px;
+      color: #fff;
+      position: relative;
+}
+
+.single-service img{
+    width: 100%;
+    height: 400px;
+    border-radius: 7px;
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#1e7192);
+    opacity: 0;
+    transition: 1s;
+
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+
+.desc {
+    width: 80%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+  }
+  
+  hr {
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+  }
+  
+  .desc:hover {
+    bottom: 40%;
+    opacity: 1;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  
+  footer nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  footer nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  footer nav ul li a {
+    text-decoration: none;
+    color: #244230;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  
+   
+  footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+  }
+/* book now button */
+   button {
+    box-shadow: 0 0 2px rgb(4, 93, 13),
+    0 0 5px rgb(6, 74, 24);
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    
+  }
+
+  footer button:hover{
+    box-shadow: 0 0 5px #0d8d86,
+    0 0 25px #0d8d86, 0 0 50px #0d8d86,
+    0 0 100px #0d8d86, 0 0 100px #0d8d86;
+    
+  }
+  
+
+  
+  @media screen and (max-width:375px){
+
+    .service-box{
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+  }
+    .single-service{
+        flex-basis: 30%;
+        margin-bottom: 20px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+
+    .desc:hover {
+        bottom: 25% !important;
+        
+}
+.fourth-header .navlinks{
+  display: inline;
+  align-items: center;
+}
+  }
+
+ 
+  @media (max-width:770px){
+    .single-service{
+       display: none;
+    }
+    .desc p {
+        font-size: 12px;
+
+    }
+    hr{
+        margin: 5px auto;
+    }
+
+    .desc:hover {
+        bottom: 25% !important;
+        
+}
+  }
+
+  /* Tickets page styles */
+
+
+  /* location  */
+  #overlay2 {
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    width: 80%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1;
+    font-family:  'Pathway Extreme', sans-serif;;
+  }
+  
+
+  #overlay2 h1  {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    left: 50%;
+    align-items: center;
+
+  }
+
+
+  #overlay2 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    left: 50%;
+    bottom: 10px;
+    align-items: center;
+  }
+
+  .places-list {
+    list-style: none;
+    padding: 0;
+}
+
+.place-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.place-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.place-address  {
+    font-size: 10px;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.place-image {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.place-contact, .place-open-time {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.select-button {
+    background-color: #007bff;
+    color: #fff;
+    border-left: 50%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+
+/* Dates,Duration and guests section */
+#service{
+  width: 100%;
+  padding: 70px 0;
+  background: #c5efff;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-container {
+  flex: 1;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.timeslot-container,
+.ticket-type-container {
+  margin-top: 20px;
+}
+
+.timeslot-list {
+  list-style: none;
+  padding: 0;
+}
+
+.timeslot-list li {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.peak-time {
+  background-color: red;
+  color: white;
+}
+
+.non-peak-time {
+  background-color: green;
+  color: white;
+}
+
+.ticket-type-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ticket-type-count button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gotocheckout button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 800px;
+}
+
+.right-container {
+  flex: 1;
+  padding-left: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+thead th {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Add more styles as needed */
+
+
+
+
+
+
+
+
+
+
+
+
+ 

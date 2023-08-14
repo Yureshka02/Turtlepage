@@ -1,0 +1,333 @@
+/* styles for the tickets page */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/confirm2.jpeg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+#dates .visitDate {
+  left: 40%;
+}
+
+#guests h2 {
+  left: 0%;
+  position: relative;
+  color: #0e0d0d; 
+}
+
+#guests .category {
+  left: 0%;
+  position: relative;
+  color: #0e0d0d;
+}
+
+#dates, #guests, #duration, #prices, #summary {
+  opacity: 0.8;
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+#duration  h2 {
+  left: 0%;
+  position: relative;
+  color: #0e0d0d;
+}
+
+#prices h2 {
+  left: 0%;
+  position: relative;
+  color: #0e0d0d;
+}
+
+#summary h2 {
+  left: 0%;
+  position: relative;
+  color: #0e0d0d;
+}
+
+
+input[type="date"],
+select {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #0e0d0d;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #66b4de;
+}
+
+.increment, .decrement {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-left: 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#summary th, #summary td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#summary td {
+  font-weight: bold;
+}
+
+.ticket-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#continueButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#continueButton:hover {
+  background-color: #0056b3;
+}
+footer {
+  background-color: #105145;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+
+
+.back-to-home-button {
+  padding: 10px 20px;
+  background-color: #0e989f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.back-to-home-button:hover {
+  background-color: #559c97;
+  color: black;
+}
+
+.back-to-home-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* styles for details page */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #055d4e;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+header h1 {
+  margin: 0; 
+  color: #f8f4f4;
+  text-decoration: wavy;
+  flex: 1; 
+}
+
+
+.main {
+  position: relative; 
+  background-image: url('images/greenturtle.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; 
+  box-sizing: border-box; 
+  backdrop-filter: blur(5px); 
+}
+
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: -1; 
+}
+
+
+.details-section, .summary-section {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px; 
+  box-sizing: border-box; 
+}
+
+
+.details-section h2, .summary-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+.details-section label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+.details-section input,
+.details-section select {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  opacity: 0.8; 
+}
+
+.details-section input:focus, .details-section select:focus {
+  border-color: #007bff;
+  opacity: 1; 
+}
+
+
+.details-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-section button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.footer2 {
+  width: 100%;
+  background-color: #01595a;
+  padding: 20px 0;
+  margin-top: 5px;
+}
+
+.contentfooter2 {
+  text-align: center;
+}
+
+.contentfooter2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.contentfooter2 ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.contentfooter2 ul a{
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .main {
+      flex-direction: column;
+  }
+
+  .details-section, .summary-section {
+      margin: 10px 0;
+  }
+}

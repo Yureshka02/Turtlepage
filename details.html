@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ticketsstyle.css">
+    <script src="details.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css">
+    <title>Details Page</title>
+</head>
+<body>
+
+    
+    <header>
+        
+        <h1>BUY TICKETS !</h1>
+        
+    </header>
+    <main class="main">
+        <section class="details-section">
+            <h2>Enter your details</h2>
+            <form id="details-form">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" maxlength="50" placeholder="Christopher Nolan">
+                <label for="mobileNumber">Mobile Number:</label>
+                <div class="mobile-number-input">
+                    <input type="tel" id="mobileNumber" name="mobileNumber" maxlength="9" placeholder="123456789">
+                   
+                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="chrisnolan@gmail.com" >
+                
+                <label for="confirmEmail">Confirm Email:</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" >
+               
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <button type="submit" id="continueBtn" disabled>Continue with purchase</button>
+            </form>
+        </section>
+        
+        <section class="summary-section">
+          <h2>Summary</h2>
+          <table id="summaryTable">
+              <tr>
+                  <td>Date</td>
+                  <td id="summaryDate"></td>
+              </tr>
+              <tr>
+                  <td>Time</td>
+                  <td id="summaryTime"></td>
+              </tr>
+              <tr>
+                  <td>Duration</td>
+                  <td id="summaryDuration"></td>
+              </tr>
+              <tr>
+                  <td>Tickets</td>
+                  <td id="summaryTickets"></td>
+              </tr>
+              <tr>
+                  <td>Total Payable</td>
+                  <td id="summaryTotal"></td>
+              </tr>
+          </table>
+      </section>
+    </main>
+    
+    <div class="contentfooter2">
+        <footer class="footer2">
+     <p>&copy; The Turtle Foundation. All rights reserved.</p>
+     <ul>
+       <li><a href="#">Privacy Policy</a></li>
+       <li><a href="#">Terms of Service</a></li>
+       <li><a href="#">Contact Us</a></li>
+     </ul>
+   
+  </footer>
+   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+</body>
+</html>
